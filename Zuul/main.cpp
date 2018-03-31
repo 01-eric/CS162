@@ -46,7 +46,7 @@ int main() {
     printf("          FIGHT - Fight the specified enemy or boss. Make sure you have higher health than the enemy! (e.g. FIGHT Kirby)\n");
     printf("          GRAB - Pick up the specified item. Can only do this to non-consumable non-enemy items. Enemies turn into grabbable trophies after battle (e.g. GRAB Link Trophy)\n");
     printf("          DROP - Dispense an item from your inventory into the current room (e.g. DROP Ike Trophy)\n");
-    printf("          QUIT - Exit the game\n");
+    printf("          SUICIDE - Exit the game\n");
     location->print();
 
     while (true) { // break when quit or loss
@@ -162,7 +162,7 @@ int main() {
             } delete [] item;
         }
 
-        else if (strcmp(words.front(), "QUIT") == 0) {
+        else if (strcmp(words.front(), "SUICIDE") == 0) {
             toBreak = true;
         }
 
